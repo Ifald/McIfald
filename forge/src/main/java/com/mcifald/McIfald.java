@@ -54,7 +54,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class McIfald {
 	
 	public static final String modid = "McIfald";
-	public static final String version = "DEV v0.8";
+	public static final String version = "DEV v0.2";
 	
 	McIfaldWorldGen eventWorldGen = new McIfaldWorldGen();
 		
@@ -69,7 +69,7 @@ public class McIfald {
 	public static ArmorMaterial TopazArmorMaterial = EnumHelper.addArmorMaterial("TopazArmorMaterial", 24, new int[] {3, 7, 5, 3}, 10);
 	
 	@Instance(modid)
-	public static McIfald instance;
+    public static McIfald instance;
 	
 	public static Item itemCopperIngot;
 	public static Item itemTinIngot;
@@ -88,13 +88,23 @@ public class McIfald {
 	
 	public static Item itemStaff;
 	
+	//Руда
+	public static Block oreAmethystOre;
+	public static Block oreBerylOre;
 	public static Block oreCopperOre;
-	public static Block oreTinOre;
-	public static Block oreZincOre;
-	public static Block oreNickelOre;
+	public static Block oreGarnetOre;
+	public static Block oreJadeOre;
 	public static Block oreManganeseOre;
-	public static Block oreVanadiumOre;
+	public static Block oreNickelOre;
+	public static Block oreSapphireOre;
+	public static Block oreSilverOre;
+	public static Block oreTinOre;
 	public static Block oreTopazOre;
+	public static Block oreTsavoriteOre;
+	public static Block oreZincOre;
+	public static Block oreVanadiumOre;
+
+
 	
 	public static Block oreNetherCopperOre;
 	public static Block oreNetherTinOre;
@@ -263,14 +273,21 @@ public class McIfald {
 		armorTopazLegs = new TopazArmor(TopazArmorMaterial, armorTopazLegsID, 2).setUnlocalizedName("TopazLegs");
 		armorTopazBoots = new TopazArmor(TopazArmorMaterial, armorTopazBootsID, 3).setUnlocalizedName("TopazBoots");
 		
-		//Ores
+		//Руда
+		oreAmethystOre = new OreBlock(Material.rock).setBlockName("AmethystOre");
+		oreBerylOre = new OreBlock(Material.rock).setBlockName("BerylOre");
 		oreCopperOre = new OreBlock(Material.rock).setBlockName("CopperOre");
-		oreTinOre = new OreBlock(Material.rock).setBlockName("TinOre");
-		oreZincOre = new OreBlock(Material.rock).setBlockName("ZincOre");
-		oreNickelOre = new OreBlock(Material.rock).setBlockName("NickelOre");
+		oreGarnetOre = new OreBlock(Material.rock).setBlockName("GarnetOre");
+		oreJadeOre = new OreBlock(Material.rock).setBlockName("JadeOre");
 		oreManganeseOre = new OreBlock(Material.rock).setBlockName("ManganeseOre");
-		oreVanadiumOre = new OreBlock(Material.rock).setBlockName("VanadiumOre");
+		oreNickelOre = new OreBlock(Material.rock).setBlockName("NickelOre");		
+		oreSapphireOre = new OreBlock(Material.rock).setBlockName("SapphireOre");
+		oreSilverOre = new OreBlock(Material.rock).setBlockName("SilverOre");	
+		oreTinOre = new OreBlock(Material.rock).setBlockName("TinOre");
 		oreTopazOre = new OreBlock(Material.rock).setBlockName("TopazOre");
+		oreTsavoriteOre = new OreBlock(Material.rock).setBlockName("TsavoriteOre");
+		oreZincOre = new OreBlock(Material.rock).setBlockName("ZincOre");
+		oreVanadiumOre = new OreBlock(Material.rock).setBlockName("VanadiumOre");		
 		
 		oreNetherCopperOre = new OreBlock(Material.rock).setBlockName("NetherCopperOre");
 		oreNetherTinOre = new OreBlock(Material.rock).setBlockName("NetherTinOre");
@@ -356,14 +373,21 @@ public class McIfald {
 		GameRegistry.registerItem(armorTopazLegs, "TopazLegs");
 		GameRegistry.registerItem(armorTopazBoots, "TopazBoots");
 		
-		//Ores
+		//Руда
+		GameRegistry.registerBlock(oreAmethystOre, "AmethystOre");
+		GameRegistry.registerBlock(oreBerylOre, "BerylOre");
 		GameRegistry.registerBlock(oreCopperOre, "CopperOre");
-		GameRegistry.registerBlock(oreTinOre, "TinOre");
-		GameRegistry.registerBlock(oreZincOre, "ZincOre");
-		GameRegistry.registerBlock(oreNickelOre, "NickelOre");
+		GameRegistry.registerBlock(oreGarnetOre, "GarnetOre");
+		GameRegistry.registerBlock(oreJadeOre, "JadeOre");
 		GameRegistry.registerBlock(oreManganeseOre, "ManganeseOre");
-		GameRegistry.registerBlock(oreVanadiumOre, "VanadiumOre");
+		GameRegistry.registerBlock(oreNickelOre, "NickelOre");		
+		GameRegistry.registerBlock(oreSapphireOre, "SapphireOre");
+		GameRegistry.registerBlock(oreSilverOre, "SilverOre");	
+		GameRegistry.registerBlock(oreTinOre, "TinOre");
 		GameRegistry.registerBlock(oreTopazOre, "TopazOre");
+		GameRegistry.registerBlock(oreTsavoriteOre, "TsavoriteOre");
+		GameRegistry.registerBlock(oreZincOre, "ZincOre");
+		GameRegistry.registerBlock(oreVanadiumOre, "VanadiumOre");
 		
 		//Nether Ores
 		GameRegistry.registerBlock(oreNetherCopperOre, "NetherCopperOre");

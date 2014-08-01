@@ -38,7 +38,7 @@ public class WorkSurfaceCraftingManager
     {
         recipes = new ArrayList();
         
-        this.addRecipe(new ItemStack(McIfald.itemStaff, 1), new Object[] {"S", "S", "S", "S", "S", 'S', Items.stick});
+        this.addRecipe(new ItemStack(McIfald.itemStaff, 1), new Object[] {"SS", "S", "S", "S", "S", 'S', Items.stick});
         
         
         Collections.sort(this.recipes, new WorkSurfaceRecipeSorter(this));

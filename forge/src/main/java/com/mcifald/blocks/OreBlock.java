@@ -11,6 +11,7 @@ import com.mcifald.McIfald;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
+
 public class OreBlock extends Block {
 
 	public OreBlock(Material material) {

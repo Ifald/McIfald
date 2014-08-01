@@ -1,4 +1,4 @@
-itemGroup.Nealecraft=Nealecraft
+﻿itemGroup.Nealecraft=Nealecraft
 
 itemGroup.McIfald=McIfald
 itemGroup.McIfaldBlock=McIfald Block
@@ -9,7 +9,7 @@ itemGroup.McIfaldPlants=McIfald Plants
 
 itemTopazHelm.name=Topaz Helm
 
-tile.CopperOre.name=Copper Ore
+tile.CopperOre.name=Медная руда
 tile.TinOre.name=Tin Ore
 tile.ZincOre.name=Zinc Ore
 tile.NickelOre.name=Nickel Ore

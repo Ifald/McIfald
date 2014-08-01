@@ -21,7 +21,7 @@ public class BloodMelon extends Block
     public BloodMelon()
     {
         super(Material.gourd);
-        this.setCreativeTab(McIfald.mcIfaldTab);
+        this.setCreativeTab(McIfald.mcIfaldPlantsTab);
         this.setHardness(2.0F);
     }
 
